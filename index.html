@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilo1.css">
+  <title>Ejercicio - Formulario</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Crear Cuenta</h1>
+    <br>
+    <form id="registrarse" action="/" method="post">
+      <table>
+        <tr>
+          <td><label for="nombre">Nombre:</label></td>
+          <td>
+            <input type="text" placeholder="Nombre" name="nombre" id="nombre" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="apellido">Apellido:</label></td>
+          <td>
+            <input type="text" placeholder="Apellido" name="apellido" id="apellido" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="email">E-mail:</label></td>
+          <td>
+            <input type="text" name="email" id="email" placeholder="Ingrese un e-mail" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="nro_tel">Número Tel.:</label></td>
+          <td><input type="number" placeholder="Sin 0 ni 15" name="nro_tel" id="nro_tel"></td>
+        </tr>
+
+        <tr>
+          <td><label for="genero">Género:</label></td>
+          <td><input type="radio" name="genero" id="genero" value="masculino" checked />Masculino:
+            <br />
+            <input type="radio" name="genero" id="genero" value="female" />Femenino:
+            <br />
+
+            <input type="radio" name="genero" id="genero" value="otro" />Otro:
+            <br />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="password"></label> Contraseña:</label></td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="fec_nac"> Fecha Nac:</label></td>
+          <td><input type="date" name="fec_nac" id="fec_nac" /></td>
+        </tr>
+      </table>
+      <br />
+      <br />
+
+      <tr>
+        <td><label for="intereses">Seleccione los tipos de cursos que le interesan:</label></td>
+      </tr>
+      <br />
+      <br />
+      <tr>
+        <td><input type="checkbox" name="cursos" id="cursos" value="1" /></td>
+        Programación Web - Full Stack <br />
+        <td><input type="checkbox" name="cursos" id="cursos" value="2" /></td>
+        Data Analytics <br />
+        <td><input type="checkbox" name="cursos" id="cursos" value="3" /></td>
+        Data Science <br />
+        <td><input type="checkbox" name="cursos" id="cursos" value="4" /></td>
+        Diseño UX
+      </tr>
+      <br />
+
+      <td><label for="contacto">Indique cómo nos conoció:</label></td>
+      <td>
+        <br>
+        <select name="contacto" id="contacto">
+          <option value="Instagram">Instagram</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Publi_radio">Publicidad radio</option>
+          <option value="Publi_tele">Publicidad televisión</option>
+          <option value="Publi_via_publica">Publicidad vía pública</option>
+          <option value="Recomendacion">Recomendación de amigo/a</option>
+        </select>
+        <br />
+        <br />
+
+        <button type="submit">Crear</button>
+        <button type="reset">Limpiar</button>
+    </form>
+  </div>
+</body>
+
+</html>
